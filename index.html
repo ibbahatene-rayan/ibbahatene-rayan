@@ -3,52 +3,163 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name - Portfolio</title>
+  <title>Rayan Ibbahatene - Engineering Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <div class="container">
-    <!-- Sidebar Navigation -->
+    <!-- Fixed Sidebar Navigation -->
     <aside class="sidebar">
-      <img src="profile.jpg" alt="Profile Picture" class="avatar">
-      <h1>Your Name</h1>
-      <p class="tagline">Engineering Student | Specialization</p>
+      <div class="profile-section">
+        <div class="avatar-placeholder">
+          <span>RI</span>
+        </div>
+        <h1>Rayan Ibbahatene</h1>
+        <p class="tagline">Engineering Student @ ENSEEIHT</p>
+        <p class="location"><i class="fa-solid fa-location-dot"></i> Toulouse, France</p>
+      </div>
 
       <nav class="nav-links">
-        <a href="#about">About</a>
-        <a href="#mobility">Mobility & Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="#about"><i class="fa-solid fa-user"></i> About</a>
+        <a href="#projects"><i class="fa-solid fa-diagram-project"></i> Projects</a>
+        <a href="#skills"><i class="fa-solid fa-code"></i> Skills</a>
+        <a href="#education"><i class="fa-solid fa-graduation-cap"></i> Education</a>
+        <a href="#mobility"><i class="fa-solid fa-globe"></i> Mobility</a>
+        <a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
       </nav>
+
+      <div class="sidebar-footer">
+        <a href="https://github.com/" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:contact@example.com" aria-label="Email"><i class="fa-solid fa-paper-plane"></i></a>
+      </div>
     </aside>
 
-    <!-- Main Scrolling Content -->
+    <!-- Main Scrollable Content -->
     <main class="content">
+      
+      <!-- About Section -->
       <section id="about">
+        <span class="section-tag">Introduction</span>
         <h2>About Me</h2>
-        <p>Your professional summary in English...</p>
-      </section>
-
-      <section id="mobility">
-        <h2>Mobility & International Experience</h2>
         <div class="card">
-          <h3>Academic Mobility / Exchange</h3>
-          <p>Details about international experiences, languages, or mobility projects.</p>
+          <p>
+            I am an engineering student at <strong>ENSEEIHT (n7)</strong> with a solid academic foundation in mathematics, physics, and computer science built during CPGE MP. 
+            Driven by mathematical rigor and first-principles modeling, I focus on solving complex engineering challenges through mathematical analysis, continuous-system simulations, and robust low-level software implementation.
+          </p>
         </div>
       </section>
 
+      <!-- Projects Section -->
       <section id="projects">
-        <h2>Projects</h2>
-        <div class="card">
-          <h3>Topological Vascular Analysis</h3>
-          <p>Graph theory modeling using Python and NetworkX.</p>
+        <span class="section-tag">Portfolio</span>
+        <h2>Featured Projects</h2>
+
+        <div class="card project-card">
+          <div class="project-header">
+            <h3>Topological Analysis of Vascular Networks</h3>
+            <span class="project-badge">Research Project (TIPE)</span>
+          </div>
+          <p class="project-tech"><strong>Technologies:</strong> Python, Graph Theory, NetworkX, NumPy, Linear Algebra</p>
+          <ul class="project-bullets">
+            <li><strong>Objective:</strong> Analyzed the topological robustness of vascular transport networks under localized damage using the 2025–2026 national research theme <em>"Cycles et Boucles"</em>.</li>
+            <li><strong>Methodology:</strong> Formulated Laplacian matrices and calculated Fiedler algebraic connectivity vectors to evaluate structural resilience. Modeled hydraulic pressure linear systems to analyze fluid dynamics under physical bottlenecks.</li>
+            <li><strong>Results:</strong> Quantified the vital role of closed loop topographies in preventing transport failure during vascular occlusion.</li>
+          </ul>
+        </div>
+
+        <div class="card project-card">
+          <div class="project-header">
+            <h3>Terminal-Based Snake Game Engine</h3>
+            <span class="project-badge">Systems & C Programming</span>
+          </div>
+          <p class="project-tech"><strong>Technologies:</strong> C Language, ANSI Escape Codes, Data Structures, Linux/Unix</p>
+          <ul class="project-bullets">
+            <li><strong>Objective:</strong> Designed and built a classic Nokia-style Snake game targeting terminal environments.</li>
+            <li><strong>Implementation:</strong> Modeled the game board dynamic state using multi-dimensional array layouts and optimized render updates using ANSI escape sequences for smooth performance and inline color rendering.</li>
+            <li><strong>Key Feature:</strong> Structured modular code base demonstrating low-level memory management and fast input handling.</li>
+          </ul>
         </div>
       </section>
 
-      <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: your.email@example.com</p>
+      <!-- Skills Section -->
+      <section id="skills">
+        <span class="section-tag">Competencies</span>
+        <h2>Technical Skills</h2>
+        <div class="card grid-2">
+          <div class="skill-group">
+            <h4 class="skill-title"><i class="fa-solid fa-terminal"></i> Software & Languages</h4>
+            <div class="tags">
+              <span class="tag">C Programming</span>
+              <span class="tag">Python</span>
+              <span class="tag">MATLAB</span>
+              <span class="tag">Linux / Unix Shell</span>
+              <span class="tag">LaTeX</span>
+              <span class="tag">Git</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h4 class="skill-title"><i class="fa-solid fa-square-root-variable"></i> Applied Mathematics & Engineering</h4>
+            <div class="tags">
+              <span class="tag">Graph Theory</span>
+              <span class="tag">Linear Algebra</span>
+              <span class="tag">Fluid Dynamics</span>
+              <span class="tag">Fixed-Point Numerical Formats</span>
+              <span class="tag">Electrical Safety Systems</span>
+            </div>
+          </div>
+        </div>
       </section>
+
+      <!-- Education Section -->
+      <section id="education">
+        <span class="section-tag">Background</span>
+        <h2>Education</h2>
+        
+        <div class="card timeline-item">
+          <div class="timeline-header">
+            <h3>Engineering Degree Program</h3>
+            <span class="timeline-date">2026 – Present</span>
+          </div>
+          <p class="institution"><strong>ENSEEIHT (n7)</strong> — Toulouse, France</p>
+          <p>Advanced engineering curriculum focusing on computer science, electrical engineering, and applied mathematics.</p>
+        </div>
+
+        <div class="card timeline-item">
+          <div class="timeline-header">
+            <h3>CPGE MP (Classes Préparatoires Aux Grandes Écoles)</h3>
+            <span class="timeline-date">2024 – 2026</span>
+          </div>
+          <p class="institution">Mathematics & Physics Track</p>
+          <p>Intensive two-year academic preparation focused on theoretical mathematics, physics, and computer science foundations.</p>
+        </div>
+      </section>
+
+      <!-- Mobility Section -->
+      <section id="mobility">
+        <span class="section-tag">International</span>
+        <h2>Mobility & Adaptability</h2>
+        <div class="card">
+          <p>
+            Based in Toulouse, France, and open to international opportunities, research collaborations, and engineering internships across Europe and worldwide. 
+          </p>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact">
+        <span class="section-tag">Get in Touch</span>
+        <h2>Contact</h2>
+        <div class="card contact-card">
+          <p>I am actively looking for engineering projects and opportunities. Feel free to reach out:</p>
+          <div class="contact-links">
+            <a href="mailto:rayan@example.com" class="btn"><i class="fa-solid fa-envelope"></i> Send Email</a>
+            <a href="https://github.com" target="_blank" class="btn btn-outline"><i class="fa-brands fa-github"></i> GitHub Profile</a>
+          </div>
+        </div>
+      </section>
+
     </main>
   </div>
 </body>
