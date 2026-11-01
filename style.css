@@ -353,3 +353,19 @@ section h2 {
 .btn-cv:hover {
     background-color: #0369a1;
 }
+/* --- Style du lecteur vidéo --- */
+.video-card {
+    margin-top: 16px;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #0f172a;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-card video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
